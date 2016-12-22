@@ -24,6 +24,8 @@
 	font-size 120%
 .font-xxl
 	font-size 150%
+.font-italic
+	font-style italic
 .ttu
 	text-transform uppercase !important
 .tdu
@@ -62,3 +64,60 @@
 	display none !important
 .opacity
 	opacity 0 !important
+.static-page
+	h1,h2,h3,h4,h5,h6
+		font-family "GothamProRegular"
+		text-transform uppercase
+	h1
+		color blue
+		font-weight 600
+		margin 15px 0
+	h2
+		color blue
+		font-weight 600
+		margin 10px 0
+	h3
+		font-weight 400
+		font-size 22px
+		margin 5px 0
+		font-weight 600
+	h4
+		font-weight 600
+		font-size 20px
+		text-transform none
+		margin 5px 0
+	h5
+		font-weight 600
+		font-size 18px
+		text-transform none
+		margin 5px 0
+	h6
+		font-weight 600
+		font-size 16px
+		text-transform none
+		margin 5px 0
+	p
+		text-align left
+	img
+		margin 10px 0
+		border img-b
+	img.fl
+		margin-right 25px
+	img.fr
+		margin-left 25px
+	.float-center
+		display -webkit-flex
+		display -moz-flex
+		display -ms-flex
+		display -o-flex
+		display flex
+		align-items top
+		+media(768px)
+			flex-wrap wrap
+		img
+			flex-shrink 0
+			height 100%
+			margin 25px
+		p
+			+media(768px)
+				width 100%

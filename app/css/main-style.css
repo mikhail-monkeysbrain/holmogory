@@ -38,6 +38,9 @@ p.meteo {
 .font-xxl {
   font-size: 150%;
 }
+.font-italic {
+  font-style: italic;
+}
 .ttu {
   text-transform: uppercase !important;
 }
@@ -98,6 +101,92 @@ p.meteo {
 }
 .opacity {
   opacity: 0 !important;
+}
+.static-page h1,
+.static-page h2,
+.static-page h3,
+.static-page h4,
+.static-page h5,
+.static-page h6 {
+  font-family: "GothamProRegular";
+  text-transform: uppercase;
+}
+.static-page h1 {
+  color: #336687;
+  font-weight: 600;
+  margin: 15px 0;
+}
+.static-page h2 {
+  color: #336687;
+  font-weight: 600;
+  margin: 10px 0;
+}
+.static-page h3 {
+  font-weight: 400;
+  font-size: 22px;
+  margin: 5px 0;
+  font-weight: 600;
+}
+.static-page h4 {
+  font-weight: 600;
+  font-size: 20px;
+  text-transform: none;
+  margin: 5px 0;
+}
+.static-page h5 {
+  font-weight: 600;
+  font-size: 18px;
+  text-transform: none;
+  margin: 5px 0;
+}
+.static-page h6 {
+  font-weight: 600;
+  font-size: 16px;
+  text-transform: none;
+  margin: 5px 0;
+}
+.static-page p {
+  text-align: left;
+}
+.static-page img {
+  margin: 10px 0;
+  border: 1px solid rgba(99,99,99,0.5);
+}
+.static-page img.fl {
+  margin-right: 25px;
+}
+.static-page img.fr {
+  margin-left: 25px;
+}
+.static-page .float-center {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: top;
+      -ms-flex-align: top;
+          align-items: top;
+}
+@media screen and (max-width: 768px) {
+  .static-page .float-center {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+  }
+}
+.static-page .float-center img {
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+  height: 100%;
+  margin: 25px;
+}
+@media screen and (max-width: 768px) {
+  .static-page .float-center p {
+    width: 100%;
+  }
 }
 .arrows {
   display: -webkit-flex;

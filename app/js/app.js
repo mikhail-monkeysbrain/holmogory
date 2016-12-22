@@ -60,6 +60,7 @@ $(document).ready(function(){
 		if ($(window).scrollTop() > 147) {
 			$(window).scroll(function(){
 				if ($(this).scrollTop() < 147) {
+					$(".to-down").addClass("none");
 					$(".header-top").css('top', panelTop);
 				};
 			});
@@ -80,6 +81,7 @@ $(document).ready(function(){
 			$(".to-down").removeClass("none");
 		};
 	});
+	console.log($(window).scrollTop())
 });
 
 $(document).ready(function () {

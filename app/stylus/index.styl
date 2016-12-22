@@ -244,6 +244,14 @@
 				right -50px
 				bottom calc(50% - 17px)
 				@extend .arrow-next
+.news
+	display -webkit-flex
+	display -moz-flex
+	display -ms-flex
+	display -o-flex
+	display flex
+	justify-content space-around
+	flex-wrap wrap
 .text-block
 	display -webkit-flex
 	display -moz-flex
@@ -252,10 +260,44 @@
 	display flex
 	padding 25px
 	flex-wrap wrap
+	&_double
+		width 50%
+		padding 25px
+		background transparent
+		transition animation
+		+media(480px)
+			width 100%
+		&:hover
+			background active
+		img
+			display none
+	&_three
+		width 33.33%
+		padding 25px
+		background transparent
+		transition animation
+		+media(768px)
+			flex 1 1 50%
+		+media(480px)
+			flex 100%
+		&:hover
+			background active
+		img
+			display none
 	&.publication
 		.text-block_text
 			transition animation
 			padding 20px
+			display -webkit-flex
+			display -moz-flex
+			display -ms-flex
+			display -o-flex
+			display flex
+			justify-content space-between
+			h4
+				flex-grow 1
+			p.taj
+				flex-grow 5
 			&:hover
 				background active
 		&:hover
