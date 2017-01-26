@@ -16,12 +16,10 @@ p.meteo {
 }
 .font-bold {
   font-weight: bold !important;
-  font-family: "RobotoBold" !important;
 }
 .font-normal,
 p.meteo {
   font-weight: normal !important;
-  font-family: "RobotoRegular" !important;
 }
 .font-xs {
   font-size: 50%;
@@ -45,7 +43,7 @@ p.meteo {
   text-transform: uppercase !important;
 }
 .tdu {
-  text-decoration: underline;
+  text-decoration: underline !important;
 }
 .ttn,
 p.meteo {
@@ -54,15 +52,28 @@ p.meteo {
 .tac {
   text-align: center !important;
 }
+.tac p {
+  text-align: center;
+}
 .tal,
 p.meteo {
   text-align: left !important;
 }
+.tal p,
+p.meteo p {
+  text-align: left;
+}
 .taj {
   text-align: justify !important;
 }
+.taj p {
+  text-align: justify;
+}
 .tar {
   text-align: right !important;
+}
+.tar p {
+  text-align: right;
 }
 .full {
   width: 100% !important;
@@ -101,6 +112,20 @@ p.meteo {
 }
 .opacity {
   opacity: 0 !important;
+}
+.td {
+  display: -webkit-flex !important;
+  display: -moz-flex !important;
+  display: -ms-flex !important;
+  display: -o-flex !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-justify-content: center !important;
+  -ms-flex-pack: center !important;
+  justify-content: center !important;
+  -webkit-align-items: center !important;
+  -ms-flex-align: center !important;
+  align-items: center !important;
 }
 .static-page h1,
 .static-page h2,
@@ -158,6 +183,22 @@ p.meteo {
 .static-page img.fr {
   margin-left: 25px;
 }
+.static-page ul {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 2em 0;
+}
+.static-page ul li {
+  margin-left: 2em;
+  list-style-type: disc;
+}
 .static-page .float-center {
   display: -webkit-flex;
   display: -moz-flex;
@@ -169,7 +210,7 @@ p.meteo {
   -ms-flex-align: top;
   align-items: top;
 }
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
   .static-page .float-center {
     -webkit-flex-wrap: wrap;
     -ms-flex-wrap: wrap;
@@ -183,10 +224,37 @@ p.meteo {
   height: 100%;
   margin: 25px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
   .static-page .float-center p {
     width: 100%;
   }
+}
+.static-page .img {
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  width: auto;
+  padding: 15px;
+  margin: 0;
+  text-align: center !important;
+}
+.static-page .img.fl {
+  margin-right: 1em;
+}
+.static-page .img.fr {
+  margin-left: 1em;
+}
+.static-page .img p {
+  text-align: center !important;
+}
+.static-page .img img {
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  width: 100%;
+}
+.contacts a {
+  color: #336687 !important;
 }
 .arrows {
   display: -webkit-flex;
@@ -203,8 +271,7 @@ p.meteo {
 .arrow-prew:hover,
 .arrow-prew:active,
 .arrow-prew:hover:active,
-.public-fill--gallery .owl-prev,
-.contacts--gallery .owl-prev {
+.public-fill--gallery .owl-prev {
   width: 35px;
   height: 35px;
   background: url("../img/sprite.png");
@@ -216,25 +283,21 @@ p.meteo {
 .arrow-prew:active:hover,
 .arrow-prew:hover:active:hover,
 .public-fill--gallery .owl-prev:hover,
-.contacts--gallery .owl-prev:hover,
-.public-fill--gallery .owl-prev,
-.contacts--gallery .owl-prev {
+.public-fill--gallery .owl-prev {
   background-position-y: 72px;
 }
 .arrow-prew:active,
 .arrow-prew:hover:active,
 .arrow-prew:active:active,
 .arrow-prew:hover:active:active,
-.public-fill--gallery .owl-prev:active,
-.contacts--gallery .owl-prev:active {
+.public-fill--gallery .owl-prev:active {
   background-position-y: 36px;
 }
 .arrow-next,
 .arrow-next:hover,
 .arrow-next:active,
 .arrow-next:hover:active,
-.public-fill .owl-next,
-.contacts .owl-next {
+.public-fill .owl-next {
   width: 35px;
   height: 35px;
   background: url("../img/sprite.png");
@@ -246,17 +309,14 @@ p.meteo {
 .arrow-next:active:hover,
 .arrow-next:hover:active:hover,
 .public-fill .owl-next:hover,
-.contacts .owl-next:hover,
-.public-fill .owl-next,
-.contacts .owl-next {
+.public-fill .owl-next {
   background-position-y: 72px;
 }
 .arrow-next:active,
 .arrow-next:hover:active,
 .arrow-next:active:active,
 .arrow-next:hover:active:active,
-.public-fill .owl-next:active,
-.contacts .owl-next:active {
+.public-fill .owl-next:active {
   background-position-y: 36px;
 }
 .arrow-up,
@@ -547,6 +607,9 @@ header .wrapper {
   width: 231px;
   height: 59px;
   background: #1f3d52;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
 }
 @media (max-width: 480px) {
   .header-top_menu {
@@ -718,6 +781,9 @@ header .wrapper {
 .paggination .page.number:hover {
   background: #cbd3d8;
 }
+.paggination .page_not a {
+  text-shadow: -1px 0px 3px #969696;
+}
 @media screen and (max-width: 768px) {
   .paggination .page_not {
     display: none;
@@ -769,8 +835,7 @@ header .wrapper {
   padding: 20px 30px;
 }
 .sitebar-item--date,
-.public-fill--date,
-.contacts--date {
+.public-fill--date {
   line-height: 30px;
   color: #a3a3a3;
 }
@@ -805,6 +870,10 @@ header .wrapper {
   padding: 56px 56px 30px;
   font-family: 'GothamProMedium';
   min-height: 100vh;
+}
+.public.static a {
+  color: #336687;
+  font-weight: 600;
 }
 @media screen and (max-width: 768px) {
   .public.static {
@@ -858,8 +927,7 @@ header .wrapper {
     height: 60px;
   }
 }
-.public-fill,
-.contacts {
+.public-fill {
   margin-top: 85px;
   display: -webkit-flex;
   display: -moz-flex;
@@ -872,30 +940,26 @@ header .wrapper {
   flex-direction: column;
 }
 @media screen and (max-width: 768px) {
-  .public-fill h2,
-  .contacts h2 {
+  .public-fill h2 {
     -webkit-order: -1;
     -ms-flex-order: -1;
     order: -1;
   }
 }
-.public-fill p,
-.contacts p {
+.public-fill p {
   color: #000;
   font-family: 'RobotoRegular';
   margin: 10px 0;
   text-align: center;
 }
-.public-fill--gallery,
-.contacts--gallery {
+.public-fill--gallery {
   margin: 35px -56px;
-  background: url("../img/bg_slider.jpg") no-repeat;
-  background-size: 100%;
+  background: url("../img/bg_slider.jpg");
+  background-size: cover;
   padding: 40px;
 }
 @media screen and (max-width: 768px) {
-  .public-fill--gallery,
-  .contacts--gallery {
+  .public-fill--gallery {
     -webkit-order: -1;
     -ms-flex-order: -1;
     order: -1;
@@ -904,8 +968,7 @@ header .wrapper {
     margin: 10px -35px;
   }
 }
-.public-fill--gallery .owl-nav.disabled,
-.contacts--gallery .owl-nav.disabled {
+.public-fill--gallery .owl-nav.disabled {
   display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flex;
@@ -921,9 +984,7 @@ header .wrapper {
   margin: 3% -6%;
 }
 .public-fill--gallery .owl-prev,
-.contacts--gallery .owl-prev,
-.public-fill--gallery .owl-next,
-.contacts--gallery .owl-next {
+.public-fill--gallery .owl-next {
   width: 35px;
   height: 35px;
   border-radius: 50%;
@@ -1449,6 +1510,9 @@ header .wrapper {
   margin: 20px 0;
   position: relative;
 }
+.contact a {
+  color: #336687 !important;
+}
 .contact-wrapper {
   float: right;
 }
@@ -1480,7 +1544,15 @@ header .wrapper {
   }
 }
 .contacts {
-  margin-top: 0;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 @media screen and (max-width: 768px) {
   .contacts .active .accordeon-box_head {
@@ -1489,6 +1561,20 @@ header .wrapper {
 }
 .contacts .accordeon-box {
   padding: 20px 45px;
+}
+.contacts .accordeon-box .td {
+  display: -webkit-flex !important;
+  display: -moz-flex !important;
+  display: -ms-flex !important;
+  display: -o-flex !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-justify-content: center !important;
+  -ms-flex-pack: center !important;
+  justify-content: center !important;
+  -webkit-align-items: center !important;
+  -ms-flex-align: center !important;
+  align-items: center !important;
 }
 @media screen and (max-width: 768px) {
   .contacts .accordeon-box {
@@ -2100,4 +2186,15 @@ option {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
+}
+.owl-item {
+  display: -webkit-flex !important;
+  display: -moz-flex !important;
+  display: -ms-flex !important;
+  display: -o-flex !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-align-items: center !important;
+  -ms-flex-align: center !important;
+  align-items: center !important;
 }

@@ -10,10 +10,8 @@
 	color active !important
 .font-bold
 	font-weight bold !important
-	font-family "RobotoBold" !important
 .font-normal
 	font-weight normal !important
-	font-family "RobotoRegular" !important
 .font-xs
 	font-size 50%
 .font-s
@@ -29,17 +27,25 @@
 .ttu
 	text-transform uppercase !important
 .tdu
-	text-decoration underline
+	text-decoration underline !important
 .ttn
 	text-transform none !important
 .tac
 	text-align center !important
+	p
+		text-align center
 .tal
 	text-align left !important
+	p
+		text-align left
 .taj
 	text-align justify !important
+	p
+		text-align justify
 .tar
 	text-align right !important
+	p
+		text-align right
 .full
 	width 100% !important
 .large
@@ -64,6 +70,14 @@
 	display none !important
 .opacity
 	opacity 0 !important
+.td
+	display -webkit-flex !important
+	display -moz-flex !important
+	display -ms-flex !important
+	display -o-flex !important
+	display flex !important
+	justify-content center !important
+	align-items center !important
 .static-page
 	h1,h2,h3,h4,h5,h6
 		font-family "GothamProRegular"
@@ -105,6 +119,17 @@
 		margin-right 25px
 	img.fr
 		margin-left 25px
+	ul
+		display -webkit-flex
+		display -moz-flex
+		display -ms-flex
+		display -o-flex
+		display flex
+		flex-direction column
+		margin 2em 0
+		li
+			margin-left 2em
+			list-style-type disc
 	.float-center
 		display -webkit-flex
 		display -moz-flex
@@ -112,12 +137,30 @@
 		display -o-flex
 		display flex
 		align-items top
-		+media(768px)
+		@media screen and (min-width: 768px)
 			flex-wrap wrap
 		img
 			flex-shrink 0
 			height 100%
 			margin 25px
 		p
-			+media(768px)
+			@media screen and (min-width: 768px)
 				width 100%
+	.img
+		flex-shrink 0
+		width auto
+		padding 15px
+		margin 0
+		text-align center !important
+		&.fl
+			margin-right 1em
+		&.fr
+			margin-left 1em
+		p
+			text-align center !important
+		img
+			flex-shrink 0
+			width 100%
+.contacts
+	a
+		color #336687 !important

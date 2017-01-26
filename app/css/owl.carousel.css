@@ -69,3 +69,7 @@
   -ms-transform: translate3d(0,0,0);
 }
 
+.owl-item {
+    display: flex !important;
+    align-items: center !important;
+}
