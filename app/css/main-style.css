@@ -171,7 +171,7 @@ p.meteo p {
   margin: 5px 0;
 }
 .static-page p {
-  text-align: left;
+  text-align: justify;
 }
 .static-page img {
   margin: 10px 0;
@@ -251,7 +251,7 @@ p.meteo p {
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
-  width: 100%;
+  width: auto;
 }
 .contacts a {
   color: #336687 !important;
@@ -2198,3 +2198,5 @@ option {
   -ms-flex-align: center !important;
   align-items: center !important;
 }
+
+/*# sourceMappingURL=main-style.css.map */

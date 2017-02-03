@@ -13,7 +13,7 @@ block content
             .callback
               - for (var x = 0; x < 4; x++)
                 .callback-item
-                  p.tal.font-blue.font-bold.font-l Фамилия Имя Отчество
+                  p.tal.font-blue.font-bold.font-l Фамилия Имя Отчество *
                   input(type="text" placeholder="Введите Ваши данные")
             .new
               .new-item
@@ -28,9 +28,12 @@ block content
               br
               input#check2(type='checkbox', name='check', value='check2')
               label(for='check2') Согласие с правилами работы on-line приемной
+            .file-upload
+              label Прикрепить файл
+                input(type='file', name='upl')
 
             button.btn_more Создать обращение
 
           
-          include include.jade/paggination
-  include include.jade/footer
+          include include.jade/paggination.jade
+  include include.jade/footer.jade
