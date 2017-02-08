@@ -126,7 +126,8 @@ $(document).ready(function() {
 }(jQuery);   
 
 $(function(){
-        $('.clip').succinct({
-            size: 300
-        });
-    });
+//        $('.clip').succinct({
+//            size: 300
+//        });
+//console.log('высота', $('.head').offset().left);
+});

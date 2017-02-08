@@ -31,7 +31,10 @@ block content
             .file-upload
               label Прикрепить файл
                 input(type='file', name='upl')
-
+            .captcha
+              img.captcha-img(src="", alt="captcha")
+              .callback-item
+                input(type="text" placeholder="Введите символы" reqired)
             button.btn_more Создать обращение
 
           
