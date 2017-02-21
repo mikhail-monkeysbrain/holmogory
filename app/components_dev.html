@@ -6,6 +6,7 @@
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/owl.carousel.min.css">
   <link rel="stylesheet" href="css/jquery.fancybox.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
   <link rel="stylesheet" href="css/main-style.css">
   <link rel="stylesheet" href="css/template-style.css">
 </head>
@@ -65,7 +66,7 @@
         </div>
         <div class="public-fill">
           <h2>стрелки</h2>
-          <div class="guide"><a href="#" class="arrow-prew"></a><code>&nbsp;&nbsp;.arrow-prew &nbsp;&nbsp;</code><a href="#" class="arrow-next"></a><code>&nbsp;&nbsp;.arrow-next &nbsp;&nbsp;</code><a href="#" class="arrow-up"></a><code>&nbsp;&nbsp;.arrow-up &nbsp;&nbsp;</code><a href="#" class="arrow-down"></a><code>&nbsp;&nbsp;.arrow-down &nbsp;&nbsp;</code></div>
+          <div class="guide"><a class="arrow-prew" href="#"></a><code>&nbsp;&nbsp;.arrow-prew &nbsp;&nbsp;</code><a class="arrow-next" href="#"></a><code>&nbsp;&nbsp;.arrow-next &nbsp;&nbsp;</code><a class="arrow-up" href="#"></a><code>&nbsp;&nbsp;.arrow-up &nbsp;&nbsp;</code><a class="arrow-down" href="#"></a><code>&nbsp;&nbsp;.arrow-down &nbsp;&nbsp;</code></div>
           <h2>паггинация</h2>
           <div class="guide">
             <q>
@@ -81,7 +82,7 @@
                 <li class="page_not"><a href="#">Конец</a></li>
                 <li class="page_not"><a href="#">Все</a></li>
               </ul>
-            </q><code>&nbsp;&nbsp; include paggination</code>
+            </q><code>&nbsp;&nbsp; include paggination.jade</code>
           </div>
           <h2>паггинация даты</h2>
           <div class="guide wrap">
@@ -99,7 +100,19 @@
                   <li class="paggination-year">2007</li></a><a href="#">
                   <li class="paggination-year">2006</li></a>
               </ul>
-            </q><code><br> include paggination-years</code>
+            </q><code><br> include paggination-years.jade</code>
+          </div>
+          <div class="guide">
+            <div class="search">
+              <select class="search-select">
+                <option class="search-option" value="op_name">%op_name%</option>
+                <option class="search-option" value="op_name">%op_name%</option>
+                <option class="search-option" value="op_name">%op_name%</option>
+                <option class="search-option" value="op_name">%op_name%</option>
+                <option class="search-option" value="op_name">%op_name%</option>
+              </select>
+              <button class="btn_more">Найти</button>
+            </div>
           </div>
         </div>
       </div>

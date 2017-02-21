@@ -20,12 +20,21 @@ block content
             h2 паггинация
             .guide
               q
-                include include.jade/paggination
-              code &nbsp;&nbsp; include paggination
+                include include.jade/paggination.jade
+              code &nbsp;&nbsp; include paggination.jade
             h2 паггинация даты
             .guide.wrap
               q
-                include include.jade/paggination-years
-              code <br> include paggination-years
+                include include.jade/paggination-years.jade
+              code <br> include paggination-years.jade
+            .guide
+              .search
+                select.search-select
+                  option.search-option(value="op_name") %op_name%
+                  option.search-option(value="op_name") %op_name%
+                  option.search-option(value="op_name") %op_name%
+                  option.search-option(value="op_name") %op_name%
+                  option.search-option(value="op_name") %op_name%
+                button.btn_more Найти
 
   include include.jade/footer.jade

@@ -4,9 +4,21 @@
     .public-fill
       h2 Капитальный ремонт
       .accordeon
-        - for (var x = 0; x < 4; x++)
+        .accordeon-box.only
+          .accordeon-box_head
+            p !!! Блок без стрелки !!! .accordeon-box.only <br> <br> Капитальный ремонт автомобильной дорогиa <span class="font-bold"> М-8 "Холмогоры", Москва - Ярославль- Вологда- Архангельск</span> на участке км 1155+700 – км 1180 в Архангельской области (2 этап I очередь км 1155+700 – км 1171+720, км 1172+000 – км 1172+784)
+          .accordeon-box--button
+            .arrow
+          .accordeon-box_content
+            p.font-blue Генеральный подрядчик
+            p - ООО «Севзапдорстрой»
+            p.font-blue Срок производства: 
+            p 2015-2016 гг
+      h2 Ремонт автодорог
+      .accordeon
+        - for (var x = 0; x < 3; x++)
           .accordeon-box
-            .accordeon-box_head
+            .accordeon-box_head.only
               p Капитальный ремонт автомобильной дороги <span class="font-bold"> М-8 "Холмогоры", Москва - Ярославль- Вологда- Архангельск</span> на участке км 1155+700 – км 1180 в Архангельской области (2 этап I очередь км 1155+700 – км 1171+720, км 1172+000 – км 1172+784)
             .accordeon-box--button
               .arrow
