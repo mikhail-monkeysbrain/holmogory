@@ -130,6 +130,14 @@
 		li
 			margin-left 2em
 			list-style-type disc
+			ul
+				margin 0
+				li
+					margin-left 1em
+					list-style none
+					&::before
+						content '-'
+						margin-right .5em
 	.float-center
 		display -webkit-flex
 		display -moz-flex
