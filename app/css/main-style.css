@@ -1839,6 +1839,13 @@ img.large {
     width: 100%;
   }
 }
+.table__static .tr {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+}
 .table__static .tr.active .td {
   background: #cbd3d8;
 }
