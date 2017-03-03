@@ -112,13 +112,13 @@ p.meteo p {
   opacity: 0 !important;
 }
 .td {
-  display: -webkit-flex !important;
-  display: -moz-flex !important;
-  display: -ms-flex !important;
-  display: -o-flex !important;
-  display: flex !important;
-  justify-content: center !important;
-  align-items: center !important;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .static-page h1,
 .static-page h2,
@@ -1855,6 +1855,13 @@ img.large {
   margin-left: -1px;
   margin-bottom: -1px;
   padding: 10px 5px;
+  justify-content: flex-start;
+}
+.table__static .td.td__right {
+  justify-content: flex-end;
+}
+.table__static .td.td__center {
+  justify-content: center;
 }
 .table__static .td__x1 {
   width: calc(100% / 1);
@@ -2120,3 +2127,68 @@ option {
   background: transparent;
   color: #a3a3a3;
 }
+AgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgCjw/eHBhY2tldCBlbmQ9InciPz6nPiEqAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAAhESURBVHjaxJxPbBVFHMc/b0tKiggFDFQTEjkIPVmSEmryNFUoHIgGUEALiRFNOMABTESgFBMgaUEPQhROJnjgTwmIVYkHbEXxvYQmcgAuVA4cPEgB+ZdI2wSCh/dbMsyb3Z2Z3ff6Szbvdd/8+c53Z2dmZz9prnldNw5RA7wOLADmAbOBKcBk4B5wB/gL+BPoB34HHlGZqAFag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");
+  background-position: 35px 0;
+  display: block;
+  margin-bottom: 10px;
+}
+@media (max-width: 960px) {
+  .all::before {
+    display: inline-block;
+    margin: -10px 10px;
+  }
+}
+.studio::after {
+  content: '\00A9';
+}
+.guide {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 2em;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.owl-item {
+  display: -webkit-flex !important;
+  display: -moz-flex !important;
+  display: -ms-flex !important;
+  display: -o-flex !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-align-items: center !important;
+      -ms-flex-align: center !important;
+          align-items: center !important;
+}
+.search {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+.search-select {
+  padding: 0 10px;
+  border: 0;
+  border-radius: 3px;
+  background: #dcf1ff;
+  transition: all 0.5s ease;
+  box-sizing: border-box;
+  color: #a3a3a3;
+  margin-right: 0.3em;
+}
+.search-select:hover {
+  box-shadow: 0 0 5px 0px #1f3d52;
+}
+.search-option {
+  background: transparent;
+  color: #a3a3a3;
+}
+/*# sourceMappingURL=app/stylus/main-style.css.map */
+/*# sourceMappingURL=main-style.css.map */

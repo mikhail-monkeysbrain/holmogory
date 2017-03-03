@@ -1,0 +1,37 @@
+<h1 id="-">Архитектура проекта</h1>
+<hr>
+<h2 id="-app">Проект лежит в папке app</h2>
+<pre><code>| - Сборка проекта prepros
+    | - JADE
+    | - Stylus
+    | - Спрайты собрал вручную, на проекте буду все собирать gulp&#39;ом
+    | - Мелочь в base64
+| - В корне папки node_modules и bower_components  
+</code></pre><hr>
+<h2 id="-bower">Менеджер пакетов Bower</h2>
+<h2 id="-prepros">Сборка проекта prepros</h2>
+<pre><code>| - JADE
+| - Stylus
+| - Спрайты собрал вручную, на проекте буду все собирать gulp&#39;ом
+| - Мелочь в base64  
+</code></pre><hr>
+<h2 id="-stylus-">Стили (stylus)</h2>
+<pre><code>| - Исходники находятся в папке stylus, собирается в папку css
+| - В хедер страницы подключается 2 стиля: reset.css и main.css
+    | - main.css собирается из управляющего стиля main.styl
+        | - в него подключаются
+            -    variables - переменные
+            -    fonts - шрифты
+            -    стили независимых блоков
+</code></pre><hr>
+<h2 id="-jade-">Верстка (JADE)</h2>
+<pre><code>| - Исходники находятся в папке jade, блоки лежат в папке jade/include.jade собираются в index.html
+    - index.jade
+        - header.jade
+            - menu.jade
+        - content.jade
+            - left.jade
+            - public.jade
+                -gallery.jade
+        - footer.jade
+</code></pre><hr>

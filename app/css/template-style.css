@@ -107,13 +107,13 @@
   opacity: 0 !important;
 }
 .td {
-  display: -webkit-flex !important;
-  display: -moz-flex !important;
-  display: -ms-flex !important;
-  display: -o-flex !important;
-  display: flex !important;
-  justify-content: center !important;
-  align-items: center !important;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .static-page h1,
 .static-page h2,
