@@ -2060,6 +2060,9 @@ footer div {
     line-height: 25px;
   }
 }
+select::-ms-expand {
+  display: none;
+}
 * {
   box-sizing: border-box;
 }
