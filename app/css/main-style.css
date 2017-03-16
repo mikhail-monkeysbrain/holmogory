@@ -882,6 +882,9 @@ header .wrapper {
   font-family: 'GothamProMedium';
   min-height: 100vh;
 }
+.public p {
+  line-height: 1.8;
+}
 .public.static a {
   color: #336687;
   font-weight: 600;
@@ -2128,6 +2131,7 @@ p {
   color: #000;
   font-family: "RobotoRegular";
   margin-bottom: 10px;
+  line-height: 1;
 }
 select {
   width: 100%;

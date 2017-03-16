@@ -81,6 +81,7 @@ media(480px)
   width: 231px;
   height: 59px;
   background: #00008b;
+  flex-shrink: 0;
 }
 @media (max-width: 480px) {
   .header-top_menu {
