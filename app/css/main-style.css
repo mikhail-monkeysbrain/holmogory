@@ -198,6 +198,7 @@ p.meteo p {
 .static-page ul li {
   margin-left: 2em;
   list-style-type: disc;
+  line-height: 1.5;
 }
 .static-page ul li ul {
   margin: 0;
